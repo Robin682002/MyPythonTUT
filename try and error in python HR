@@ -1,0 +1,21 @@
+print("Try programiz.pro")
+# try and except error
+T = int(input())
+for i in range(T):
+    try :
+        a,b = map(int, input().split())
+        print(a//b) #I/P = 3 , 1
+    except ZeroDivision as e: #This error is raised when the second argument of a division or modulo operation is zero. #I/P = 1 , 0
+        print("error Code", e):
+    except ValurError as v: #This error is raised when a built-in operation or function receives an argument that has the right type but an inappropriate value. I/P = 2, $
+        print("error code", v)
+
+import re
+if __name__ == '__main__':
+    t = int(input().rstrip())
+    for i in range (t):
+        try:
+            re.compile(input().rstrip())
+            print("True")
+        except re error:
+            print("False")
